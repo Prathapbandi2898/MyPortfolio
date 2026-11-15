@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #171616;
+  background: #f3edf1;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(760px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.topbar {
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.brand {
+  font-size: 19px;
+  font-weight: 750;
+  letter-spacing: -0.7px;
+}
+
+.brand span {
+  color: #777;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+  color: #666;
+  font-size: 13px;
+}
+
+nav a:hover,
+.link-section a:hover {
+  color: #000;
+}
+
+.hero {
+  padding: 94px 0 76px;
+}
+
+.eyebrow {
+  margin: 0 0 13px;
+  color: #777;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(38px, 8vw, 58px);
+  line-height: 1.08;
+  letter-spacing: -2.8px;
+}
+
+.hero h2 {
+  margin: 13px 0 0;
+  color: #555;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.intro {
+  max-width: 540px;
+  margin: 19px 0 25px;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid #dedede;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 150ms ease;
+}
+
+.button:hover {
+  background: #f5f5f5;
+}
+
+.button-dark {
+  color: #fff;
+  background: #171717;
+  border-color: #171717;
+}
+
+.button-dark:hover {
+  background: #333;
+}
+
+.section {
+  padding: 28px 0;
+  border-top: 1px solid #eeeeee;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 17px;
+}
+
+.section-heading h3,
+.link-section h3 {
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: -0.3px;
+}
+
+.items {
+  display: grid;
+  gap: 10px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 16px;
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+}
+
+.item h4 {
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+
+.item p {
+  margin: 0;
+  color: #777;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.icon-link {
+  display: inline-flex;
+  flex: 0 0 auto;
+  color: #666;
+}
+
+.icon-link:hover {
+  color: #000;
+}
+
+.link-section {
+  display: grid;
+  gap: 14px;
+}
+
+.link-section h3 {
+  margin-bottom: 3px;
+}
+
+.link-section a {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: fit-content;
+  color: #666;
+  font-size: 13px;
+}
+
+footer {
+  padding: 28px 0 36px;
+  color: #999;
+  font-size: 12px;
+  border-top: 1px solid #eeeeee;
+}
+
+@media (max-width: 520px) {
+  .container {
+    width: min(100% - 32px, 760px);
+  }
+
+  .topbar {
+    height: 66px;
+  }
+
+  nav {
+    gap: 13px;
+    font-size: 12px;
+  }
+
+  .hero {
+    padding: 72px 0 58px;
+  }
+
+  h1 {
+    letter-spacing: -1.8px;
+  }
+
+  .item {
+    padding: 13px;
+  }
+}
